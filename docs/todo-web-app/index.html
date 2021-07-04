@@ -51,7 +51,8 @@
       </google-codelab-step>
     
       <google-codelab-step label="Day1: プログラミング基礎" duration="10">
-        <h2 is-upgraded>プログラミングとは？</h2>
+        <p>それでは、プログラミング</p>
+<h2 is-upgraded>プログラミングとは？</h2>
 <p>プログラミング = コンピュータにわかる言葉で命令すること。</p>
 <p>コンピュータにわかる言葉 = プログラミング言語</p>
 <p>プログラミング言語はたくさんある →目的によって選択肢が絞られる。</p>
@@ -113,22 +114,99 @@
 <p>src/index.js</p>
 <pre><code language="language-javascript:src/index.js" class="language-javascript:src/index.js">console.log(&#34;test&#34;);
 </code></pre>
+<p>これで環境の準備は完了です。 次回のセクションから、実際にコードを書いていきます。 まずは真似しながらでもコピペでも良いので、理解しながら進めていきましょう。</p>
+<p>今回は、<a href="https://ja.wikipedia.org/wiki/Fizz_Buzz#:~:text=Fizz%20Buzz%EF%BC%88%E3%83%95%E3%82%A3%E3%82%BA%E3%83%BB%E3%83%90%E3%82%BA%E3%80%81,%E3%82%8F%E3%82%8C%E3%82%8B%E8%A8%80%E8%91%89%E9%81%8A%E3%81%B3%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82" target="_blank">FizzBuzz</a>という、企業が求める最低限のプログラミング能力があるかを確認するための問題に挑戦してみましょう。</p>
+<p>仕様は以下の通りです。1~100の数字を仕様に基づいて全て表示してください。</p>
+<ul>
+<li>数字（3の倍数でも5の倍数でもない場合）</li>
+<li>Fizz（3の倍数の場合）</li>
+<li>Buzz（5の倍数の場合）</li>
+<li>FizzBuzz（3と5の倍数の場合）</li>
+</ul>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Day1: HTML/CSSを書いてみよう" duration="20">
-        
+        <p>それでは、まずはHTMLのコードについて説明します。</p>
+<p>HTML = HyperText Markup Languageの略です。 通称マークアップ言語と呼ばれ、Webサイトの部品と構造を作るために書かれています。 そして、HTMLタグ（要素）と呼ばれているもので構成されています。</p>
+<p>HTMLタグのリファレンスは<a href="http://www.htmq.com/html/indexm.shtml" target="_blank">こちら</a>にあるので、照らし合わせながら確認してみましょう！</p>
+<p>次に、CSSのコードについて説明します。 CSS = Cascading StyleSheetsの略です。 通称スタイルシート言語と呼ばれ、Webサイトのデザインを整えるために書かれています。</p>
+<p>CSSの指定の仕方は<a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">こちら</a>にあるので書きながら解説していきます！</p>
+<p>ここでは、以下の条件でコードを追加してみましょう！（できたら、色々いじって動かしてみましょう！）</p>
+<ul>
+<li>タグを追加して、背景をlightblueに。高さは50px。 </li>
+<li>タグの中にタグを書いて、FizzBuzzを表示 </li>
+</ul>
+
 
       </google-codelab-step>
     
       <google-codelab-step label="Day1: JavaScriptを書いてみよう" duration="20">
-        
+        <p><a href="https://jsprimer.net/basic/" target="_blank">参考</a></p>
+<h2 is-upgraded>変数</h2>
+<p>プログラミング言語には、文字列や数値などのデータに名前をつけることで、繰り返し利用できるようにする変数という機能があります。</p>
+<pre><code language="language-javascript" class="language-javascript">let a = &#34;ube-startup&#34;;
+console.log(a);
+</code></pre>
+<h2 is-upgraded>コメント</h2>
+<p>コメントはプログラムとして評価されないため、ソースコードの説明を書くために利用されています。</p>
+<pre><code language="language-javascript" class="language-javascript">let a = &#34;ube-startup&#34;; // aと名前の変数にube-startupという名前の文字列を代入
+</code></pre>
+<h2 is-upgraded>条件分岐</h2>
+<p>if文を使うことで、プログラム内に条件分岐を書けます。</p>
+<pre><code language="language-javascript" class="language-javascript">let x = 42;
+if (x &gt; 10) {
+    console.log(&#34;xは10より大きな値です&#34;);
+}
+</code></pre>
+<p>複数の条件分岐を書く場合は、if文に続けてelse if文を使うことで書けます。</p>
+<pre><code language="language-javascript" class="language-javascript">let x = 42;
+if (x &gt; 10) {
+    console.log(&#34;xは10より大きな値です&#34;);
+} else if(x &lt; 10) {
+    console.log(&#34;xは10より大きな値です&#34;);
+}
+</code></pre>
+<p>if文とelse if文では、条件に一致した場合の処理をブロック内に書いていました。 一方で条件に一致しなかった場合の処理は、else文を使うことで書けます。</p>
+<pre><code language="language-javascript" class="language-javascript">let num = 1;
+if (num &gt; 10) {
+    console.log(`numは10より大きいです: ${num}`);
+} else {
+    console.log(`numは10以下です: ${num}`);
+}
+</code></pre>
+<h2 is-upgraded>ループと反復処理</h2>
+<p>プログラミングにおいて、同じ処理を繰り返すために同じコードを繰り返し書く必要はありません。 ループやイテレータなどを使い、反復処理として同じ処理を繰り返し実行できます。</p>
+<p>for文は繰り返す範囲を指定した反復処理を書くことができます。</p>
+<pre><code language="language-javascript" class="language-javascript">for (初期化式; 条件式; 増分式) {
+    実行する文;
+}
+</code></pre>
+<pre><code language="language-javascript" class="language-javascript">let total = 0; // totalの初期値は0
+// for文の実行フロー
+// iを0で初期化
+// iが10未満（条件式を満たす）ならfor文の処理を実行
+// iに1を足し、再び条件式の判定へ
+for (let i = 0; i &lt; 10; i++) {
+    total += i + 1; // 1から10の値をtotalに加算している
+}
+console.log(total); // =&gt; 55
+</code></pre>
+<p>それでは、先程の仕様に基づいてFizzBuzzをconsoleに表示させてみましょう！</p>
+<ul>
+<li>数字（3の倍数でも5の倍数でもない場合）</li>
+<li>Fizz（3の倍数の場合）</li>
+<li>Buzz（5の倍数の場合）</li>
+<li>FizzBuzz（3と5の倍数の場合）</li>
+</ul>
+<pre><code language="language-javascript" class="language-javascript">// ヒント
+for (let i = 1; i &lt;= 100; i++) {
+    //条件文を書く
+}
+</code></pre>
+<p>お疲れ様でした！</p>
 
-      </google-codelab-step>
-    
-      <google-codelab-step label="Day1終了" duration="1">
-        
 
       </google-codelab-step>
     
