@@ -44,8 +44,7 @@
 </ul>
 <h2 is-upgraded>Day1の開発環境について</h2>
 <p>Day1は、Web上で利用することができる統合開発環境（複数の一般的な開発者用ツールを 1 つのグラフィカル・ユーザー・インタフェース (GUI) で使えるようにしたもの）である<a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>を利用します。</p>
-<p>詳細な利用方法は、<a href="https://nishidayoshikatsu.github.io/codelabs/todo-web-app/index.html#3" target="_blank">Day1: HTML/CSSを書いてみよう</a>で説明します。</p>
-<p>Negative : If you do not have SSH setup on your machine and got an error cloning the repo, you can clone the https link instead as follows:<br><code>git clone https://github.com/<Your_Github_User>/solace-dev-codelabs.git</code></p>
+<p>詳細な利用方法は、<a href="https://nishidayoshikatsu.github.io/codelabs/todo-web-app/index.html#3" target="_blank">Day1: 環境構築</a>で説明します。</p>
 <p>※CodeSandboxは、必ずしも会員登録する必要はありませんが、会員登録すればハンズオンのデータが保存できるようになる、複数のプロジェクトを作成できるなどのメリットがあります。 Day2以降は直接はDay1のコードを使わない上、CodeSandboxも利用しない予定なので、会員登録するか否かは参加者の皆様のご判断に任せます。</p>
 
 
@@ -78,6 +77,42 @@
 <li>CSS: デザイン</li>
 <li>JavaScript: 動き</li>
 </ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Day1: 環境構築" duration="20">
+        <ol type="1">
+<li><a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>にアクセスし、Create a Sandboxボタンを押す</li>
+<li>画面中央のメニューにて、CreateSandbox、Vanillaを選択</li>
+<li>デフォルトのコードを以下のものに置き換える</li>
+</ol>
+<p>index.html</p>
+<pre><code language="language-html:index.html" class="language-html:index.html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World!&lt;/title&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;src/styles.css&#34; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div&gt;
+      Hello World!
+    &lt;/div&gt;
+
+    &lt;script src=&#34;src/index.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>src/styles.css</p>
+<pre><code language="language-css:src/styles.css" class="language-css:src/styles.css">body {
+  background-color: lightgray;
+}
+</code></pre>
+<p>src/index.js</p>
+<pre><code language="language-javascript:src/index.js" class="language-javascript:src/index.js">console.log(&#34;test&#34;);
+</code></pre>
 
 
       </google-codelab-step>
