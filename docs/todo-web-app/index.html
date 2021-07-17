@@ -214,10 +214,48 @@ for (let i = 1; i &lt;= 100; i++) {
 }
 </code></pre>
 <p>お疲れ様でした！</p>
-<h2 is-upgraded>Day2, 3の開発環境について</h2>
-<p>Day2, 3は開発環境としてVSCodeを利用します。</p>
-<p>VSCodeは、Microsoft社が提供するエディタです。 プログラミングするのに便利な機能が多く含まれています。</p>
-<p>https://azure.microsoft.com/ja-jp/products/visual-studio-code/</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Day2, 3の開発環境のダウンロード" duration="0">
+        <p>Day2, 3は開発環境としてVSCodeを利用します。</p>
+<p>VSCodeは、Microsoft社が提供するエディタです。 プログラミングするのに便利な機能が多く含まれています。 <a href="https://azure.microsoft.com/ja-jp/products/visual-studio-code/" target="_blank">ここ</a>からダウンロードお願いします。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Gitのダウンロード" duration="0">
+        <p>Gitは、「分散型バージョン管理システム」と呼ばれるツールです。</p>
+<p>Gitを使うことで、ソースコードに対して行った変更を複数人で共有し、効率よく開発を進めることができます。</p>
+<p>Windowsの人は<a href="https://gitforwindows.org/" target="_blank">ここ</a>から、Macの人はデフォルトでインストールされているので不要です。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Githubのアカウント登録" duration="0">
+        <p>Githubは、一言で言うと「ソースコード管理サービス」です。</p>
+<p>ソースコードの変更履歴の管理や閲覧、バグ追跡機能などを備えており、開発者にとってなくてはならないサービスです。</p>
+<p>また、GitHubを使ってソースコードの管理を行っている企業も多数あります。</p>
+<p><a href="https://github.co.jp/" target="_blank">こちら</a>よりご登録ください。</p>
+<p>現在Code for Yamaguchiで運用している<a href="https://yamaguchi.stopcovid19.jp/" target="_blank">山口県新型コロナウイルス感染症対策サイト</a>も<a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi" target="_blank">githubでソースコードを管理</a>しています。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Gitを使ったバージョン管理の仕方" duration="0">
+        <p>ローカルリポジトリの内容をリモートリポジトリに送信（アップロード）することを「push」と呼びます。</p>
+<pre><code>git push
+</code></pre>
+<p>ワークツリーとは、実際に作業している場所(ディレクトリ)のことを指します。ここでああでもあい、こうでもないと試行錯誤して開発を進めるわけですね。</p>
+<p>そのあとソースコードが完成したら、リポジトリに更新する必要があります。このソースコードの更新作業を「commit」と呼びます。</p>
+<pre><code>git commit -m &#34;コミットメッセージをここに書く&#34;
+</code></pre>
+<p>ここでワークツリーとリポジトリの間には、インデックスというスペースがあります。これはコミットするファイルを準備するところです。ワークツリーからインデックスに登録することを「add」と呼びます。</p>
+<pre><code>git add
+</code></pre>
+<h2 is-upgraded>まとめ</h2>
+<p>１.git addコマンドで、インデックスにコミットしたいファイルを登録する。 2.git commitコマンドで、インデックスにあるファイルを更新する。 3.git pushコマンドで、ローカルリポジトリの内容をリモートリポジトリに送信する</p>
 
 
       </google-codelab-step>
