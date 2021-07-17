@@ -270,7 +270,7 @@ VSCodeは、Microsoft社が提供するエディタです。
 [ここ](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)からダウンロードお願いします。
 
 
-## Gitのダウンロード
+## Day2: Gitのダウンロード
 
 Gitは、「分散型バージョン管理システム」と呼ばれるツールです。
 
@@ -278,7 +278,7 @@ Gitを使うことで、ソースコードに対して行った変更を複数�
 
 Windowsの人は[ここ](https://gitforwindows.org/)から、Macの人はデフォルトでインストールされているので不要です。
 
-## Githubのアカウント登録
+## Day2: Githubのアカウント登録
 
 Githubは、一言で言うと「ソースコード管理サービス」です。
 
@@ -290,7 +290,7 @@ Githubは、一言で言うと「ソースコード管理サービス」です�
 
 現在Code for Yamaguchiで運用している[山口県新型コロナウイルス感染症対策サイト](https://yamaguchi.stopcovid19.jp/)も[githubでソースコードを管理](https://github.com/nishidayoshikatsu/covid19-yamaguchi)しています。
 
-## Gitを使ったバージョン管理の仕方
+## Day2: Gitを使ったバージョン管理の仕方
 
 ローカルリポジトリの内容をリモートリポジトリに送信（アップロード）することを「push」と呼びます。
 ```
@@ -313,6 +313,51 @@ git add
 
 ### まとめ
 
-１.git addコマンドで、インデックスにコミットしたいファイルを登録する。
-2.git commitコマンドで、インデックスにあるファイルを更新する。
-3.git pushコマンドで、ローカルリポジトリの内容をリモートリポジトリに送信する
+1. git addコマンドで、インデックスにコミットしたいファイルを登録する。
+
+2. git commitコマンドで、インデックスにあるファイルを更新する。
+
+3. git pushコマンドで、ローカルリポジトリの内容をリモートリポジトリに送信する
+
+## Day2: Git, Githubワークショップ
+
+まずは、[ここ](https://github.com/nishidayoshikatsu/todo-handson)より今回のハンズオンで利用するコードを以下のコマンドを実行してpc内に環境をコピーしましょう。
+
+```
+git clone https://github.com/nishidayoshikatsu/todo-handson.git
+```
+
+次に、自分の作業の変更を管理するための場所を作るために、branchを作りましょう。
+
+```
+git branch yoshikatsu
+```
+
+そして、README.mdを変更して変更履歴を保存しましょう！
+
+```
+git add README.md
+git commit -m "README.mdを変更”
+```
+
+次に、githubでリポジトリを新規作成しましょう！
+できたら、コマンドリモートリポジトリにpushしましょう！
+
+```
+git remote add origin url
+git push -u origin main
+```
+
+これで自分のコード履歴をリモートで管理できるようになりました！
+
+## Day2: コードを変更してToDoアプリを作っていこう
+
+最終的なデザインは[こちら](https://www.figma.com/file/XvpbfsVDFliraLAqwf0exp/ToDoApp?node-id=0%3A1)
+
+1. 先ほどgit cloneしたフォルダをVSCodedeで開きましょう。
+2. VSCodeの拡張をインストール
+3. ToDoの一覧が見えることを確認
+
+ToDoに書かれている通りに実装を進めていきましょう！
+
+本日はここまででokです！

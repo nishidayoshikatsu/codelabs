@@ -225,7 +225,7 @@ for (let i = 1; i &lt;= 100; i++) {
 
       </google-codelab-step>
     
-      <google-codelab-step label="Gitのダウンロード" duration="0">
+      <google-codelab-step label="Day2: Gitのダウンロード" duration="0">
         <p>Gitは、「分散型バージョン管理システム」と呼ばれるツールです。</p>
 <p>Gitを使うことで、ソースコードに対して行った変更を複数人で共有し、効率よく開発を進めることができます。</p>
 <p>Windowsの人は<a href="https://gitforwindows.org/" target="_blank">ここ</a>から、Macの人はデフォルトでインストールされているので不要です。</p>
@@ -233,7 +233,7 @@ for (let i = 1; i &lt;= 100; i++) {
 
       </google-codelab-step>
     
-      <google-codelab-step label="Githubのアカウント登録" duration="0">
+      <google-codelab-step label="Day2: Githubのアカウント登録" duration="0">
         <p>Githubは、一言で言うと「ソースコード管理サービス」です。</p>
 <p>ソースコードの変更履歴の管理や閲覧、バグ追跡機能などを備えており、開発者にとってなくてはならないサービスです。</p>
 <p>また、GitHubを使ってソースコードの管理を行っている企業も多数あります。</p>
@@ -243,7 +243,7 @@ for (let i = 1; i &lt;= 100; i++) {
 
       </google-codelab-step>
     
-      <google-codelab-step label="Gitを使ったバージョン管理の仕方" duration="0">
+      <google-codelab-step label="Day2: Gitを使ったバージョン管理の仕方" duration="0">
         <p>ローカルリポジトリの内容をリモートリポジトリに送信（アップロード）することを「push」と呼びます。</p>
 <pre><code>git push
 </code></pre>
@@ -255,7 +255,44 @@ for (let i = 1; i &lt;= 100; i++) {
 <pre><code>git add
 </code></pre>
 <h2 is-upgraded>まとめ</h2>
-<p>１.git addコマンドで、インデックスにコミットしたいファイルを登録する。 2.git commitコマンドで、インデックスにあるファイルを更新する。 3.git pushコマンドで、ローカルリポジトリの内容をリモートリポジトリに送信する</p>
+<ol type="1">
+<li>git addコマンドで、インデックスにコミットしたいファイルを登録する。</li>
+<li>git commitコマンドで、インデックスにあるファイルを更新する。</li>
+<li>git pushコマンドで、ローカルリポジトリの内容をリモートリポジトリに送信する</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Day2: Git, Githubワークショップ" duration="0">
+        <p>まずは、<a href="https://github.com/nishidayoshikatsu/todo-handson" target="_blank">ここ</a>より今回のハンズオンで利用するコードを以下のコマンドを実行してpc内に環境をコピーしましょう。</p>
+<pre><code>git clone https://github.com/nishidayoshikatsu/todo-handson.git
+</code></pre>
+<p>次に、自分の作業の変更を管理するための場所を作るために、branchを作りましょう。</p>
+<pre><code>git branch yoshikatsu
+</code></pre>
+<p>そして、README.mdを変更して変更履歴を保存しましょう！</p>
+<pre><code>git add README.md
+git commit -m &#34;README.mdを変更&#34;
+</code></pre>
+<p>次に、githubでリポジトリを新規作成しましょう！ できたら、コマンドリモートリポジトリにpushしましょう！</p>
+<pre><code>git remote add origin url
+git push -u origin main
+</code></pre>
+<p>これで自分のコード履歴をリモートで管理できるようになりました！</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Day2: コードを変更してToDoアプリを作っていこう" duration="0">
+        <p>最終的なデザインは<a href="https://www.figma.com/file/XvpbfsVDFliraLAqwf0exp/ToDoApp?node-id=0%3A1" target="_blank">こちら</a></p>
+<ol type="1">
+<li>先ほどgit cloneしたフォルダをVSCodedeで開きましょう。</li>
+<li>VSCodeの拡張をインストール</li>
+<li>ToDoの一覧が見えることを確認</li>
+</ol>
+<p>ToDoに書かれている通りに実装を進めていきましょう！</p>
+<p>本日はここまででokです！</p>
 
 
       </google-codelab-step>
