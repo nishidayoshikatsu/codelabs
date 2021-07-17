@@ -356,8 +356,6 @@ git push -u origin main
 
 1. 先ほどgit cloneしたフォルダをVSCodedeで開きましょう。
 2. VSCodeの拡張をインストール
-3. ToDoの一覧が見えることを確認
-
-ToDoに書かれている通りに実装を進めていきましょう！
+3. ToDoに書かれている内容を実装！
 
 本日はここまででokです！
