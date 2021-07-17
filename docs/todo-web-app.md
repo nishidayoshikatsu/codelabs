@@ -260,3 +260,12 @@ for (let i = 1; i <= 100; i++) {
 ```
 
 お疲れ様でした！
+
+### Day2, 3の開発環境について
+
+Day2, 3は開発環境としてVSCodeを利用します。
+
+VSCodeは、Microsoft社が提供するエディタです。
+プログラミングするのに便利な機能が多く含まれています。
+
+https://azure.microsoft.com/ja-jp/products/visual-studio-code/
