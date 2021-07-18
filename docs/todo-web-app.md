@@ -359,3 +359,17 @@ git push -u origin main
 3. ToDoに書かれている内容を実装！
 
 本日はここまででokです！
+
+## Day3: 本日作り込んでいく部分
+
+* HTMLで入力フォームを追加
+* 削除ボタンの実装
+* デプロイ
+* レスポンシブ対応
+* その他改善・修正
+
+※LINE APIとの連携は、時間が足りなさそうなので説明を省かせてもらいます。
+興味ある方は以下のチュートリアルをやってみてください。
+
+https://developers.line.biz/ja/docs/messaging-api/nodejs-sample/
+
